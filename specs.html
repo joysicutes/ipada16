@@ -8,11 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>iPad A16 Specifications</title>
-
-
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F8F9FA;
+            color: #000;
+        }
+
         .icon-hover {
-            transition: transform 0.3s ease, color 0.3s ease;
+            transition: transform .3s ease, color .3s ease;
             cursor: pointer;
         }
 
@@ -28,7 +32,7 @@
             height: 3px;
             background: #81D4FA;
             width: 0;
-            transition: width 0.3s ease;
+            transition: width .3s ease;
             display: block;
         }
 
@@ -36,103 +40,115 @@
             width: 100%;
         }
 
-        .reveal.show {
-            opacity: 1;
-        }
-
         .reveal {
             transition: opacity 1s ease-in-out;
             opacity: 0;
         }
+
+        .reveal.show {
+            opacity: 1;
+        }
+
+        @media(max-width:768px) {
+
+            .container,
+            .container-fluid {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .navbar .btn {
+                padding: .25rem .75rem !important;
+                font-size: .9rem !important;
+            }
+
+            h1.display-3 {
+                font-size: 2rem !important;
+            }
+
+            h2.display-6 {
+                font-size: 1.5rem !important;
+            }
+
+            p.fs-5 {
+                font-size: 1rem !important;
+            }
+
+            img.img-fluid {
+                max-width: 90% !important;
+            }
+        }
     </style>
 </head>
 
-<body style="font-family: 'Poppins', sans-serif; background-color: #F8F9FA; color: #000;">
+<body>
 
     <nav class="navbar fixed-top" style="background-color:#11259A;">
-        <div class="container-fluid">
-            <div class="d-flex w-100 justify-content-between align-items-center px-3 py-2">
-
+        <div class="container-fluid px-3">
+            <div class="d-flex w-100 justify-content-between align-items-center py-2">
                 <a class="navbar-brand fw-bold text-white" href="#">iPad A16</a>
-
                 <div class="d-flex align-items-center text-center">
-
                     <a class="nav-link fs-6 text-white position-relative me-3 nav-item-link" id="overview-link"
-                        href="index.html" style="padding-bottom:5px;">
-                        Overview
-                        <span class="nav-link-line"
-                            style="position:absolute; bottom:0; left:0; width:0; height:3px; background:#81D4FA; display:block; transition:width 0.3s;"></span>
-                    </a>
-
+                        href="index.html" style="padding-bottom:5px;">Overview
+                        <span class="nav-link-line"></span></a>
                     <a class="nav-link fs-6 text-white position-relative me-3 active-link nav-item-link" id="specs-link"
-                        href="#specs" style="padding-bottom:5px;">
-                        Specifications
-                        <span class="nav-link-line"
-                            style="position:absolute; bottom:0; left:0; width:100%; height:3px; background:#81D4FA; display:block; transition:width 0.3s;"></span>
-                    </a>
-
+                        href="#specs" style="padding-bottom:5px;">Specifications
+                        <span class="nav-link-line" style="width:100%;"></span></a>
                     <a href="https://www.apple.com/ipad/" class="btn rounded-pill px-3 text-decoration-none fw-semibold"
-                        style="background-color:#81D4FA; color:#11259A; border:none;">
-                        More iPad
-                    </a>
+                        style="background-color:#81D4FA;color:#11259A;border:none;">More iPad</a>
                 </div>
-
             </div>
         </div>
     </nav>
 
     <div class="container mt-5 pt-5 reveal">
-        <div class="row align-items-center g-4">
-            <div class="col-12 col-lg-6 text-center text-lg-start order-lg-1">
-                <h1 class="fw-bold display-3 mt-3" style="color: #11259A;">iPad 2025</h1>
-                <h2 class="display-6 fw-semibold mb-4" style="color: #11259A;">A16 Chip</h2>
-                <p class="fs-5" style="color: black;">
-                    The all-new iPad 2025, powered by the A16 chip, delivers exceptional performance,
-                    sleek design, and next-generation features for work and creativity.
-                </p>
+        <div class="row align-items-center g-4 text-center text-lg-start">
+            <div class="col-12 col-lg-6 order-lg-1">
+                <h1 class="fw-bold display-3 mt-3" style="color:#11259A;">iPad 2025</h1>
+                <h2 class="display-6 fw-semibold mb-4" style="color:#11259A;">A16 Chip</h2>
+                <p class="fs-5">The all-new iPad 2025, powered by the A16 chip, delivers exceptional performance, sleek
+                    design, and next-generation features for work and creativity.</p>
             </div>
-            <div class="col-12 col-lg-6 text-center order-lg-2">
+            <div class="col-12 col-lg-6 order-lg-2 text-center">
                 <img src="images/pic7.png" alt="iPad display view" class="img-fluid mt-3">
             </div>
         </div>
     </div>
 
     <hr class="my-5">
-
     <div class="container mt-5 pt-5 pb-5 reveal" id="specs">
-        <h1 class="fw-bold text-center mb-5" style="color: #11259A;">Display</h1>
-        <div class="row justify-content-center align-items-center g-4">
-            <div class="col-12 col-lg-6 text-center mb-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Size & Weight</h3>
-                <p class="fs-5" style="color: black;">11-inch Liquid Retina Display</p>
+        <h1 class="fw-bold text-center mb-5" style="color:#11259A;">Display</h1>
+        <div class="row justify-content-center align-items-center g-4 text-center">
+            <div class="col-12 col-lg-6">
+                <h3 class="fw-bold mb-3" style="color:#11259A;">Size & Weight</h3>
+                <p class="fs-5">11-inch Liquid Retina Display</p>
                 <div class="table-responsive">
-                    <table class="w-100"
-                        style="max-width: 400px; margin: 0 auto; border-collapse: collapse; color: black;">
+                    <table class="w-100 mx-auto" style="max-width:400px;border-collapse:collapse;color:black;">
                         <tbody>
-                            <tr style="border-bottom: 1px solid #11259A;">
-                                <td style="padding: 8px 0; text-align: left;">Dimensions</td>
-                                <td style="padding: 8px 0; text-align: right;">247.6 × 178.5 × 7.0 mm</td>
+                            <tr style="border-bottom:1px solid #11259A;">
+                                <td class="text-start py-2">Dimensions</td>
+                                <td class="text-end py-2">247.6 × 178.5 × 7.0 mm</td>
                             </tr>
-                            <tr style="border-bottom: 1px solid #11259A;">
-                                <td style="padding: 8px 0; text-align: left;">Wi-Fi</td>
-                                <td style="padding: 8px 0; text-align: right;">477 g</td>
+                            <tr style="border-bottom:1px solid #11259A;">
+                                <td class="text-start py-2">Wi-Fi</td>
+                                <td class="text-end py-2">477 g</td>
                             </tr>
                             <tr>
-                                <td style="padding: 8px 0; text-align: left;">Wi-Fi + Cellular</td>
-                                <td style="padding: 8px 0; text-align: right;">481 g</td>
+                                <td class="text-start py-2">Wi-Fi + Cellular</td>
+                                <td class="text-end py-2">481 g</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-center">
-                <img src="images/pic8.png" class="img-fluid" alt="iPad Display" style="height: auto;">
+            <div class="col-12 col-lg-6">
+                <img src="images/pic8.png" class="img-fluid" alt="iPad Display">
             </div>
         </div>
 
-        <div class="row justify-content-center text-center mt-5 reveal g-4">
+        <div class="row justify-content-center text-center mt-5 g-4">
             <div class="col-12 col-md-6">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Capacity</h3>
+                <h3 class="fw-bold mb-3" style="color:#11259A;">Capacity</h3>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
                     <span class="px-3 py-2 rounded-pill bg-light">128GB</span>
                     <span class="px-3 py-2 rounded-pill bg-light">256GB</span>
@@ -140,358 +156,85 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Colors</h3>
-                <div class="d-flex justify-content-center gap-4">
+                <h3 class="fw-bold mb-3" style="color:#11259A;">Colors</h3>
+                <div class="d-flex justify-content-center gap-3">
                     <span class="rounded-circle border border-dark"
-                        style="width:35px; height:35px; background:#FFD54F;"></span>
+                        style="width:35px;height:35px;background:#FFD54F;"></span>
                     <span class="rounded-circle border border-dark"
-                        style="width:35px; height:35px; background:#EF9A9A;"></span>
+                        style="width:35px;height:35px;background:#EF9A9A;"></span>
                     <span class="rounded-circle border border-dark"
-                        style="width:35px; height:35px; background:#81D4FA;"></span>
+                        style="width:35px;height:35px;background:#81D4FA;"></span>
                     <span class="rounded-circle border border-dark"
-                        style="width:35px; height:35px; background:#E0E0E0;"></span>
+                        style="width:35px;height:35px;background:#E0E0E0;"></span>
                 </div>
             </div>
         </div>
 
         <div class="mt-5 reveal">
-            <h3 class="fw-bold text-center mb-5" style="color: #11259A;">More iPad A16 Features</h3>
-
+            <h3 class="fw-bold text-center mb-5" style="color:#11259A;">More iPad A16 Features</h3>
             <div class="row text-center justify-content-center g-4">
-
-                <div class="col-6 col-md-4">
-                    <i class="bi bi-tablet icon-hover" style="font-size:4rem; color:#11259A;"></i>
-                    <p class="mt-2 fw-semibold" style="color:black;">Liquid Retina</p>
+                <div class="col-6 col-md-4"><i class="bi bi-tablet icon-hover"
+                        style="font-size:4rem;color:#11259A;"></i>
+                    <p class="mt-2 fw-semibold">Liquid Retina</p>
                 </div>
-
-                <div class="col-6 col-md-4">
-                    <i class="bi bi-layers icon-hover" style="font-size:4rem; color:#11259A;"></i>
-                    <p class="mt-2 fw-semibold" style="color:black;">LED + IPS Tech</p>
+                <div class="col-6 col-md-4"><i class="bi bi-layers icon-hover"
+                        style="font-size:4rem;color:#11259A;"></i>
+                    <p class="mt-2 fw-semibold">LED + IPS Tech</p>
                 </div>
-
-                <div class="col-6 col-md-4">
-                    <i class="bi bi-aspect-ratio icon-hover" style="font-size:4rem; color:#11259A;"></i>
-                    <p class="mt-2 fw-semibold" style="color:black;">2360 × 1640</p>
+                <div class="col-6 col-md-4"><i class="bi bi-aspect-ratio icon-hover"
+                        style="font-size:4rem;color:#11259A;"></i>
+                    <p class="mt-2 fw-semibold">2360 × 1640</p>
                 </div>
-
-                <div class="col-6 col-md-4">
-                    <i class="bi bi-circle-half icon-hover" style="font-size:4rem; color:#11259A;"></i>
-                    <p class="mt-2 fw-semibold" style="color:black;">True Tone</p>
+                <div class="col-6 col-md-4"><i class="bi bi-circle-half icon-hover"
+                        style="font-size:4rem;color:#11259A;"></i>
+                    <p class="mt-2 fw-semibold">True Tone</p>
                 </div>
-
-                <div class="col-6 col-md-4">
-                    <i class="bi bi-brightness-high icon-hover" style="font-size:4rem; color:#11259A;"></i>
-                    <p class="mt-2 fw-semibold" style="color:black;">500 nits</p>
+                <div class="col-6 col-md-4"><i class="bi bi-brightness-high icon-hover"
+                        style="font-size:4rem;color:#11259A;"></i>
+                    <p class="mt-2 fw-semibold">500 nits</p>
                 </div>
-
-                <div class="col-6 col-md-4">
-                    <i class="bi bi-shield-check icon-hover" style="font-size:4rem; color:#11259A;"></i>
-                    <p class="mt-2 fw-semibold" style="color:black;">Anti-Fingerprint</p>
+                <div class="col-6 col-md-4"><i class="bi bi-shield-check icon-hover"
+                        style="font-size:4rem;color:#11259A;"></i>
+                    <p class="mt-2 fw-semibold">Anti-Fingerprint</p>
                 </div>
-
             </div>
         </div>
-        <p class="text-secondary mt-4 p-4 text-center"> The iPad’s display features rounded corners. Measured diagonally
-            in a rectangular shape, the screen size is 10.86 inches, <br> though the actual visible area is slightly
-            smaller. </p>
+        <p class="text-secondary mt-4 p-3 text-center">The iPad’s display features rounded corners. Measured diagonally
+            in a rectangular shape, the screen size is 10.86 inches, though the actual visible area is slightly smaller.
+        </p>
     </div>
 
     <hr class="my-3">
-
     <div class="container mt-3 pt-3 pb-5 text-center reveal">
-        <h1 class="fw-bold mb-4" style="color: #11259A;">Chip</h1>
+        <h1 class="fw-bold mb-4" style="color:#11259A;">Chip</h1>
         <div class="row justify-content-center align-items-center g-4">
-            <div class="col-12 col-lg-6 mb-4 text-center order-lg-1">
-                <h4 class="fw-bold mb-3" style="color: #11259A;">A16 Bionic</h4>
-                <p class="fs-5" style="color:black;">5-core CPU</p>
-                <p class="fs-5" style="color:black;">4-core GPU</p>
-                <p class="fs-5" style="color:black;">16-core Neural Engine</p>
+            <div class="col-12 col-lg-6 mb-4">
+                <h4 class="fw-bold mb-3" style="color:#11259A;">A16 Bionic</h4>
+                <p class="fs-5">5-core CPU</p>
+                <p class="fs-5">4-core GPU</p>
+                <p class="fs-5">16-core Neural Engine</p>
             </div>
-            <div class="col-12 col-lg-6 order-lg-2">
-                <img src="images/pic9.png" class="img-fluid" alt="A16 Chip Diagram"
-                    style="height:auto; max-width: 300px;">
-            </div>
+            <div class="col-12 col-lg-6"><img src="images/pic9.png" class="img-fluid" alt="A16 Chip Diagram"
+                    style="max-width:300px;"></div>
         </div>
-        <p class="text-secondary mt-4 p-4 text-center">The iPad 2025 delivers fluid multitasking, console-quality
-            graphics, and lightning-fast processing for everything you do.</p>
+        <p class="text-secondary mt-4 p-3">The iPad 2025 delivers fluid multitasking, console-quality graphics, and
+            lightning-fast processing for everything you do.</p>
     </div>
 
-
-    <hr class="my-3">
-
-    <div class="container mt-3 pt-5 pb-5 text-center reveal">
-        <h1 class="fw-bold mb-5" style="color: #11259A;">Camera</h1>
-        <div class="row justify-content-center g-4">
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-camera" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">12MP Wide, ƒ/1.8</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-zoom-in" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Digital Zoom 5x</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-camera2" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Five-element Lens</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-camera2" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Autofocus</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-image" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Panorama 63MP</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-stars" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Smart HDR 4</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-geo-alt" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Photo Geotagging</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-shield-check" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Auto Image Stabilization</p>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 text-center">
-                <i class="bi bi-camera-reels" style="font-size: 3rem; color: #11259A;"></i>
-                <p class="mt-2 fw-semibold">Burst Mode, HEIF & JPEG</p>
-            </div>
-        </div>
-    </div>
-
-    <hr class="my-3">
-
-    <div class="container mt-3 pt-5 pb-5 text-center reveal">
-        <h1 class="fw-bold mb-5" style="color: #11259A;">Video Features</h1>
-        <div class="row text-center justify-content-center g-4">
-            <div class="col-6 col-md-4">
-                <i class="bi bi-camera-video" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">4K Video</p>
-                <small>24, 25, 30, or 60 fps</small>
-            </div>
-            <div class="col-6 col-md-4">
-                <i class="bi bi-display" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">1080p HD</p>
-                <small>25, 30, or 60 fps</small>
-            </div>
-            <div class="col-6 col-md-4">
-                <i class="bi bi-phone" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">720p HD</p>
-                <small>30 or 60 fps</small>
-            </div>
-            <div class="col-6 col-md-4">
-                <i class="bi bi-clock-history" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">Slo-Mo</p>
-                <small>1080p at 120 or 240 fps</small>
-            </div>
-            <div class="col-6 col-md-4">
-                <i class="bi bi-camera" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">Time-Lapse</p>
-                <small>With stabilization</small>
-            </div>
-            <div class="col-6 col-md-4">
-                <i class="bi bi-shield-check" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">Video Stabilization</p>
-                <small>Smooth & stable footage</small>
-            </div>
-        </div>
-
-        <h3 class="fw-semibold mt-5 mb-5" style="color: #11259A;">Video & Audio Calling</h3>
-        <div class="row text-center justify-content-center g-4">
-            <div class="col-6 col-md-3">
-                <i class="bi bi-camera-video" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">FaceTime Video</p>
-                <small class="d-block">iPad to any FaceTime-enabled device over Wi-Fi or cellular</small>
-                <small>Center Stage supported</small>
-            </div>
-            <div class="col-6 col-md-3">
-                <i class="bi bi-telephone" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">FaceTime Audio</p>
-                <small>iPad to any FaceTime-enabled device over Wi-Fi or cellular</small>
-            </div>
-            <div class="col-6 col-md-3">
-                <i class="bi bi-speaker" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">Speakers</p>
-                <small>Landscape stereo speakers</small>
-            </div>
-            <div class="col-6 col-md-3">
-                <i class="bi bi-mic" style="font-size:3rem; color:#11259A;"></i>
-                <p class="mt-2 fw-semibold mb-1">Microphones</p>
-                <small>Dual microphones for calls, video recording, and audio recording</small>
-            </div>
-        </div>
-    </div>
-
-
-    <hr class="my-3">
-
-    <div class="container mt-3 pt-5 pb-5 text-center reveal">
-        <h1 class="fw-bold mb-5" style="color: #11259A;">Cellular & Wireless</h1>
-        <div class="row justify-content-center text-center pt-3 g-4">
-            <div class="col-12 col-md-4 mb-3 pt-3">
-                <h5 class="fw-semibold mb-2" style="color:#11259A;">All models</h5>
-                <p class="mb-1">Wi-Fi 6 802.11ax with 2x2 MIMO</p>
-                <p class="mb-1">Simultaneous dual band</p>
-                <p class="mb-1">Bluetooth 5.3</p>
-                <p class="mb-1">Wi-Fi calling</p>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                <h5 class="fw-semibold mb-2" style="color:#11259A;">Wi-Fi + Cellular models</h5>
-                <p class="mb-1">5G sub-6 GHz with 4x4 MIMO</p>
-                <p class="mb-1">Gigabit LTE with 4x4 MIMO</p>
-                <p class="mb-1">eSIM</p>
-                <p class="mb-1">Data only</p>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                <h5 class="fw-semibold mb-2" style="color:#11259A;">Model A3355</h5>
-                <p class="mb-1">5G</p>
-                <p class="mb-1">FDD-LTE</p>
-                <p class="mb-1">TD-LTE</p>
-                <p class="mb-1">UMTS/HSPA/HSPA+</p>
-            </div>
-        </div>
-        <p class="text-center text-secondary pt-5 mx-5"> The iPad utilizes advanced eSIM technology, offering greater
-            convenience and enhanced security, but it does not support physical SIM cards.</p>
-    </div>
-
-    <hr class="my-3">
-
-    <div class="container text-center mt-3 pt-5 pb-5">
-        <h1 class="fw-bold mb-5" style="color: #11259A;">More Features of iPad A16</h1>
-        <div class="row justify-content-center g-4 text-start">
-            <div class="col-12 col-md-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Sensors</h3>
-                <p class="mb-2">Touch ID</p>
-                <p class="mb-2">Three-axis gyro</p>
-                <p class="mb-2">Accelerometer</p>
-                <p class="mb-2">Barometer</p>
-                <p class="mb-2">Ambient light sensor</p>
-                <p class="mb-2">Touch ID - Unlock iPad</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Power & Battery</h3>
-                <p class="mb-2">Built-in 28.93-watt-hour rechargeable lithium-polymer battery</p>
-                <p class="mb-2">Up to 10 hours of surfing the web on Wi-Fi or watching video</p>
-                <p class="mb-2">Charging via power adapter or USB-C to computer system</p>
-                <p class="mb-2">Wi-Fi + Cellular models: Up to 9 hours of surfing the web using cellular data network
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Operating System</h3>
-                <p class="mb-2">iPadOS comes with powerful features and built-in apps designed to take advantage of the
-                    unique capabilities of iPad.</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center g-4 text-start mt-5 pt-5">
-            <div class="col-12 col-md-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Charging & Expansion</h3>
-                <p class="mb-2">USB-C port with support for:</p>
-                <p class="mb-2">Charging</p>
-                <p class="mb-2">DisplayPort</p>
-                <p class="mb-2">USB 2.0 (up to 480 Mb/s)</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">Languages</h3>
-                <p class="mb-2">
-                    Arabic, Bulgarian, Catalan, Chinese (Simplified, Traditional, Traditional - Hong Kong),
-                    Croatian, Czech, Danish, Dutch, English (Australia, India, UK, U.S.), Finnish, French (Canada,
-                    France), German, Greek, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Kazakh, Korean,
-                    Lithuanian, Malay, Norwegian, Polish, Portuguese (Brazil, Portugal), Romanian, Russian, Slovak,
-                    Slovenian, Spanish (Latin America, Spain, U.S.), Swedish, Thai, Turkish, Ukrainian, Vietnamese
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <h3 class="fw-bold mb-3" style="color: #11259A;">iPad and the Environment</h3>
-                <p class="mb-2">iPad is designed to reduce environmental impact:</p>
-                <p class="mb-0"> The iPad is thoughtfully designed to minimize its environmental impact. According to
-                    the iPad
-                    Product Environmental Report, it plays a key role in Apple's progress toward achieving its Apple
-                    2030 goals. The device is made with 40% recycled content, and over 30% of the electricity used
-                    in its manufacturing comes from renewable sources. </p>
-            </div>
-        </div>
-    </div>
-
-    <hr class="m-0" style="border-top: 1px solid rgba(0,0,0,0.2); width: 100%;">
-    <div class="bg-light text-center text-dark py-2 w-100" style="margin: 0; padding: 10px 0;">
+    <hr class="m-0" style="border-top:1px solid rgba(0,0,0,0.2);width:100%;">
+    <div class="bg-light text-center text-dark py-2 w-100">
         <p class="mb-0">&copy; 2025 Joyce iPad A16 Showcase. All Rights Reserved.</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
-
-        const faders = document.querySelectorAll('.reveal');
-        const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target);
-            });
-        }, appearOptions);
-        faders.forEach(fader => appearOnScroll.observe(fader));
-
-        //for navss
-        function setActiveLink(activeLink) {
-            const navLinks = document.querySelectorAll('.nav-item-link');
-            navLinks.forEach(link => {
-                const line = link.querySelector('.nav-link-line');
-                link.classList.remove('active-link');
-                line.style.width = '0';
-            });
-
-            activeLink.classList.add('active-link');
-            activeLink.querySelector('.nav-link-line').style.width = '100%';
-        }
-
+        const faders = document.querySelectorAll('.reveal'); const appearOptions = { threshold: .2, rootMargin: "0px 0px -50px 0px" }; const appearOnScroll = new IntersectionObserver(function (entries, observer) { entries.forEach(entry => { if (!entry.isIntersecting) return; entry.target.classList.add('show'); observer.unobserve(entry.target); }); }, appearOptions); faders.forEach(fader => appearOnScroll.observe(fader));
+        function setActiveLink(activeLink) { const navLinks = document.querySelectorAll('.nav-item-link'); navLinks.forEach(link => { const line = link.querySelector('.nav-link-line'); link.classList.remove('active-link'); line.style.width = '0'; }); activeLink.classList.add('active-link'); activeLink.querySelector('.nav-link-line').style.width = '100%'; }
         document.addEventListener('DOMContentLoaded', () => {
-            const navLinks = document.querySelectorAll('.nav-item-link');
-
-            const initialActiveLink = document.querySelector('.active-link');
-            if (initialActiveLink) {
-                initialActiveLink.querySelector('.nav-link-line').style.width = '100%';
-            }
-
-            navLinks.forEach(link => {
-                const line = link.querySelector('.nav-link-line');
-
-                link.addEventListener('mouseenter', () => {
-                    if (!link.classList.contains('active-link')) {
-                        line.style.width = '100%';
-                    }
-                });
-
-                link.addEventListener('mouseleave', () => {
-                    if (!link.classList.contains('active-link')) {
-                        line.style.width = '0';
-                    }
-                });
-
-                link.addEventListener('click', (e) => {
-                    if (link.getAttribute('href').startsWith('#')) {
-                        e.preventDefault();
-                        setActiveLink(link);
-                    }
-                });
-            });
-
-            const faders = document.querySelectorAll('.reveal');
-            const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-            const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) return;
-                    entry.target.classList.add('show');
-                    observer.unobserve(entry.target);
-                });
-            }, appearOptions);
-            faders.forEach(fader => appearOnScroll.observe(fader));
+            const navLinks = document.querySelectorAll('.nav-item-link'); const initialActiveLink = document.querySelector('.active-link'); if (initialActiveLink) { initialActiveLink.querySelector('.nav-link-line').style.width = '100%'; }
+            navLinks.forEach(link => { const line = link.querySelector('.nav-link-line'); link.addEventListener('mouseenter', () => { if (!link.classList.contains('active-link')) { line.style.width = '100%'; } }); link.addEventListener('mouseleave', () => { if (!link.classList.contains('active-link')) { line.style.width = '0'; } }); link.addEventListener('click', () => setActiveLink(link)); });
         });
     </script>
-
 </body>
 
 </html>
